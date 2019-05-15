@@ -34,6 +34,7 @@ public class GoodsServiceImpl implements GoodsService{
         if (goodsBean.getId() == null){
             goodsMapper.insGoodsList(goodsBean);
         }else {
+            System.out.println(goodsBean.getId());
             goodsMapper.updGoodsList(goodsBean);
         }
 
